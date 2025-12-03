@@ -1,168 +1,285 @@
-# ✅ **HTML Tasks (Progressive, ~45 min)**
+# ✅ **HTML Beginner Tasks (15 Tasks, Very Explanatory, ~45 min)**
 
-## **1. Create the Project Folder & index.html**
+*You will gradually build a complete multi-section webpage using Live Server.*
 
-**Tips:**
+---
 
+## **1. Create Your Project Folder & Open it With Live Server**
+
+### **Task Requirements**
+
+* Create a folder named `html-practice`.
+* Inside it, create a file named `index.html`.
 * Open the folder with VS Code.
-* Right-click → “Open with Live Server”.
-* Leave the browser open to see live updates.
+* Right-click `index.html` → **Open with Live Server**.
+
+### **Tips**
+
+* Live Server automatically reloads the page when you save.
+* Keep the browser open on the side so you instantly see changes.
 
 ---
 
-## **2. Add the HTML Boilerplate**
+## **2. Add the HTML Boilerplate (Document Structure)**
 
-**Tips:**
+### **Task Requirements**
 
-* Type `!` in VS Code → Enter for a quick template.
-* Keep the `<title>` simple.
+* Add the following elements to your page:
+  `<!DOCTYPE html>`, `<html>`, `<head>`, `<title>`, `<body>`.
+* Add a title inside `<title>` that describes the project.
 
----
+### **Tips**
 
-## **3. Add an `<h1>` Main Heading**
-
-**Tips:**
-
-* One `<h1>` per page.
-* Think of it as the page’s main title.
+* Type `!` + Enter in VS Code to auto-generate the boilerplate.
+* The document structure ensures your file is correctly interpreted by the browser.
 
 ---
 
-## **4. Add a Paragraph of Text**
+## **3. Add a Main Page Heading**
 
-**Tips:**
+### **Task Requirements**
 
-* Use clear, short sentences.
-* Create separation with multiple paragraphs if needed.
+* Inside `<body>`, add a single `<h1>` element with a title for your webpage (e.g., “My First Webpage”).
 
----
+### **Tips**
 
-## **5. Add an Unordered List**
-
-**Tips:**
-
-* Use `<ul>` and `<li>`.
-* Lists make content easier to read.
+* Use only **one** `<h1>` per page — it represents the top-level title.
+* Make it descriptive and clear.
 
 ---
 
-## **6. Add an Ordered List**
+## **4. Add a Descriptive Paragraph**
 
-**Tips:**
+### **Task Requirements**
 
-* Use `<ol>` for steps.
-* Keep items short and consistent.
+* Add one or two `<p>` paragraphs explaining what this page is about.
+* Write at least 2–3 sentences.
 
----
+### **Tips**
 
-## **7. Create a Simple Table**
-
-**Tips:**
-
-* Use `<table>`, `<tr>`, `<td>`.
-* Fill with simple data (e.g., “Name / Value”).
+* Split long text into separate `<p>` elements for readability.
+* Think of paragraph text as the “content” under your main title.
 
 ---
 
-## **8. Add `id` and `class` Attributes**
+## **5. Create an Unordered List (Bullet Points)**
 
-**Tips:**
+### **Task Requirements**
 
-* `id` = unique identifier.
-* `class` = reusable for multiple elements.
+* Create a `<ul>` that contains **at least 3 list items** (`<li>`).
+* Choose any topic (e.g., hobbies, favorite foods, movies).
+
+### **Tips**
+
+* `<ul>` = unordered list → bullet points.
+* Each list item goes inside `<li></li>`.
 
 ---
 
-## **9. Create a Basic Page Structure**
+## **6. Create an Ordered List (Numbered Steps)**
 
-Add:
+### **Task Requirements**
 
-* `<header>`
-* `<main>`
-* `<footer>`
+* Create an `<ol>` with **at least 3 steps**.
+* It could describe a process (e.g., “How I start my day”).
 
-**Tips:**
+### **Tips**
 
-* Semantic tags improve readability.
-* Keep each section with ONLY one purpose.
+* `<ol>` automatically numbers items.
+* Use this when order matters.
+
+---
+
+## **7. Add a Simple Table**
+
+### **Task Requirements**
+
+* Create a `<table>` with:
+
+  * **2 columns**
+  * **3 rows**
+* Fill it with any simple data (e.g., “Task / Status”).
+
+### **Tips**
+
+* Structure reminder: `<table>` → `<tr>` → `<td>`.
+* Tables are for structured, grid-like data.
+
+---
+
+## **8. Use `id` and `class` Attributes**
+
+### **Task Requirements**
+
+* Give **one element** (any element) a unique `id`.
+* Give **three elements** the same `class`.
+* Choose meaningful names (e.g., `id="main-title"`, `class="highlight"`).
+
+### **Tips**
+
+* `id` must be unique in the entire document.
+* `class` is reusable and helps grouping elements for styling later.
+
+---
+
+## **9. Create Semantic Layout Sections**
+
+### **Task Requirements**
+
+Inside `<body>`, create:
+
+* a `<header>`
+* a `<main>`
+* a `<footer>`
+
+Move your existing content into:
+
+* `<header>` → main heading
+* `<main>` → paragraphs, lists, table
+* `<footer>` → simple text (e.g., © 2025)
+
+### **Tips**
+
+* Semantic tags help browsers and screen readers understand the structure.
+* This layout prepares your page for CSS later.
 
 ---
 
 ## **10. Build a “Hero” Section**
 
-Inside `<main>`, create a `<section id="hero">` containing:
+### **Task Requirements**
 
-* A heading
-* A short description
+Inside `<main>`, add:
 
-**Tips:**
+```html
+<section id="hero">
+  <h2>Hero Section Title</h2>
+  <p>A short description explaining the purpose of this page.</p>
+</section>
+```
 
-* Use `<h2>` for section titles.
-* Keep this section simple and clean.
+### **Tips**
 
----
-
-## **11. Add an Image in the About Section**
-
-Create `<section id="about">` with:
-
-* A heading
-* A paragraph
-* **One image**
-
-**Tips:**
-
-* Use online images if needed.
-* Add `alt=""` for accessibility.
-* Check the image path if it doesn’t load.
+* `<h2>` is used for section titles (never use multiple `<h1>`s).
+* Keep the hero description short (2–4 sentences).
 
 ---
 
-## **12. Add a Video in the Media Section**
+## **11. Add an Image Inside an “About” Section**
 
-Create `<section id="media">` with:
+### **Task Requirements**
 
-* A heading
-* **An embedded YouTube video (`<iframe>`)**
+Create a new section:
 
-**Tips:**
+```html
+<section id="about">
+  <h2>About Me</h2>
+  <p>Write a short description.</p>
+  <img src="IMAGE_URL_HERE" alt="Description of the image">
+</section>
+```
 
-* Use YouTube → Share → Embed.
-* You can adjust width/height if needed.
-* Test playback using Live Server.
+* Use an online image URL or file from your folder.
+* The image must be visible in the browser.
 
----
+### **Tips**
 
-## **13. Create a Contact Section with a Form**
-
-Inside `<section id="contact">`, include a form with:
-
-* Name input
-* Email input
-* Message textarea
-* Submit button
-
-**Tips:**
-
-* Wrap inputs in `<form>`.
-* Add labels to make fields clear.
-* The form doesn’t need to work yet — structure only.
+* If the image doesn’t load, check the `src` path.
+* `alt` text helps screen readers and SEO.
+* Choose a small image so it loads fast.
 
 ---
 
-## **14. Add a Footer**
+## **12. Add a Video Using YouTube Embed**
 
-**Tips:**
+### **Task Requirements**
 
-* Keep it simple (e.g., copyright).
-* Footer is ideal for static info.
+Create a section:
+
+```html
+<section id="media">
+  <h2>Featured Video</h2>
+  <iframe ...></iframe>
+</section>
+```
+
+* Go to YouTube → Share → Embed → copy the `<iframe>`.
+* Add it inside the section.
+
+### **Tips**
+
+* If the video looks too big, adjust width/height in the iframe.
+* Always ensure the full `<iframe>` tag is included.
+* Test playback in Live Server.
 
 ---
 
-## **15. Review & Clean Up the Page**
+## **13. Create a Contact Form**
 
-**Tips:**
+### **Task Requirements**
 
-* Remove empty spaces or unused elements.
-* Check each section in Live Server.
-* Ensure headings, lists, image, video, and form all appear correctly.
+Inside a new section:
+
+```html
+<section id="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text">
+
+    <label>Email:</label>
+    <input type="email">
+
+    <label>Message:</label>
+    <textarea></textarea>
+
+    <button type="submit">Send</button>
+  </form>
+</section>
+```
+
+### **Tips**
+
+* Labels help users understand each input.
+* The form doesn’t need to send data yet — structure only.
+* Use simple, clear field names.
+
+---
+
+## **14. Add Content to the Footer**
+
+### **Task Requirements**
+
+Inside `<footer>`, add:
+
+* Copyright
+* Your name or project name
+* Year (e.g., “© 2025 My Project”)
+
+### **Tips**
+
+* Keep the footer short.
+* Footers usually contain static information.
+
+---
+
+## **15. Final Cleanup and Review**
+
+### **Task Requirements**
+
+* Remove unnecessary empty lines.
+* Make sure every `<section>` has a heading.
+* Verify that:
+
+  * Hero section shows correctly
+  * Image loads
+  * Video loads
+  * Form displays cleanly
+  * Footer appears at the bottom
+* Save the file and check everything in Live Server.
+
+### **Tips**
+
+* Scan the page top-to-bottom for missing closing tags.
+* Organize your code with indentation (2 spaces or 4 spaces).
+* A clean structure makes future CSS much easier.
