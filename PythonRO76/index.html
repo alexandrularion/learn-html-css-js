@@ -1,3 +1,6 @@
+<!-- 
+HTML - Hypertext Markup Language 
+-->
 <html>
   <!-- Non visibile area -->
 
@@ -11,6 +14,54 @@
     <!-- Import CSS -->
     <link rel="stylesheet" href="/something.css" />
 
+    <!-- Style Element -->
+    <style>
+      /*  
+      Selectors - are used to find the HTML elements we want to style.
+      Types of selectors: 
+       - element: p, h1, h2, div, section, img, video etc
+       - id: #id-value
+       - class: .class-value
+       - *: selects all elements
+      */
+
+      /* selector template */
+      /* 
+      selector_name {
+        property-key-1: value;
+        property-key-2: value;
+        ...
+        property-key-n: value;
+      } 
+      */
+
+      /* element selector example */
+      button {
+        background: #000;
+        color: #fff;
+      }
+
+      /* id selector */
+      #my-heading {
+        color: blue;
+        font-size: 3rem;
+        margin: 30px;
+      }
+
+      /* class selector */
+      .my-text {
+        color: #ccc;
+        font-size: 2vw;
+        padding: 5px;
+      }
+
+      /* global selector */
+      * {
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
     <!-- Import JS -->
     <script src="/something.js" async defer></script>
 
@@ -22,7 +73,11 @@
 
   <body>
     <!-- Paragraph Element -->
-    <p>
+    <!-- 
+      Inline CSS: Using style attribute
+      Properties are formed by: property-name: value;
+     -->
+    <p style="font-size: 24px; color: #ff0000; font-weight: 700">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus minus
       dolores, quia ratione dolorum possimus fugit eligendi deserunt, debitis
       maiores qui fuga vel architecto odit nemo quibusdam voluptate?
@@ -30,12 +85,12 @@
     </p>
 
     <!-- Headings -->
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
+    <h1 id="my-heading" class="my-text">Heading 1</h1>
+    <h2 class="my-text">Heading 2</h2>
+    <h3 class="my-text">Heading 3</h3>
+    <h4 class="my-text">Heading 4</h4>
     <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <h6 id="special-heading">Heading 6</h6>
 
     <!-- Button Element -->
     <button>Click meee</button>
