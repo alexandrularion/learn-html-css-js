@@ -1,4 +1,4 @@
-# ✅ **HTML Beginner Tasks with Explanations (~45 min)**
+# ✅ **HTML Tasks (~45 min)**
 
 *You will build a multi-section page with image, video, and form. Terms are explained for beginners.*
 
