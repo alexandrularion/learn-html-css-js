@@ -1,0 +1,57 @@
+body {
+  background-color: #3c3c3c;
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 17, 255, 0.5));
+}
+
+img {
+  height: 300px;
+  /* All sides */
+  margin: 30px;
+  /* Top -> Left -> Bottom -> Right */
+  margin: 30px 20px 15px 30px;
+  /* All sides */
+  padding: 30px;
+  /* It takes available space (including padding) */
+  background: #8590fb;
+
+  /* border: width -> style -> color */
+  border: 5px solid #e7e9ff;
+  /* Using specific properties to obtain same result */
+  border-width: 2px;
+  border-style: solid;
+  border-color: #e7e9ff;
+  /* border-radius: top left corner -> top right corner -> bottom right corner -> bottom left corner */
+  border-radius: 50px 50px 50px 50px;
+}
+
+/* Floats - old - lack of functionality - all wide support (old/new browser) */
+/* Flexbox - layout system used to align elements within html page */
+/* Grid -  layout system used to align elements within html page*/
+
+/* display property
+values: none, inline, inline-block, block, flex, grid ... etc
+often used: none, flex, grid
+*/
+
+body {
+  /* Default behavior is show elements in one row */
+  display: flex;
+
+  /* Set direction: row or column (row-reverse, column-reverse) */
+  flex-direction: column;
+
+  /* Used to align elements on X and Y */
+  align-items: center;
+  justify-content: flex-start;
+
+  /* Distance between flex items */
+  gap: 100px;
+}
+
+/* Unique constraint for devices under 500px width (e.g. smartphones) */
+@media screen and (max-width: 500px) {
+  img {
+    /* Modify only the needed properties */
+    border-radius: 25px;
+  }
+}
